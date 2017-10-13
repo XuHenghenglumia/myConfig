@@ -25,7 +25,7 @@
    (quote
     ("5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" default)))
  '(menu-bar-mode nil)
- '(package-selected-packages (quote (material-theme counsel swiper company)))
+ '(package-selected-packages (quote (magit material-theme counsel swiper company)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -60,12 +60,15 @@
 ;;(add-hook hook (lambda () (linum-mode 1))))
 (setq linum-format "%2s ")
 (global-hl-line-mode t)
+(setq auto-save-default nil)
+(setq make-backup-file-name-function nil)
 (load-theme 'material-light t)
 (show-paren-mode t)
 (fringe-mode 0)
 (recentf-mode t)
 (global-company-mode t)
 (global-set-key (kbd "<f7>") 'recentf-open-files)
+(global-set-key (kbd "C-x g") 'magit-status)
 ;; swiper
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
