@@ -25,7 +25,9 @@
    (quote
     ("5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" default)))
  '(menu-bar-mode nil)
- '(package-selected-packages (quote (magit material-theme counsel swiper company)))
+ '(package-selected-packages
+   (quote
+    (ace-jump-mode magit material-theme counsel swiper company)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -78,3 +80,4 @@
 (global-set-key (kbd "<f6>") 'ivy-resume)
 (global-set-key (kbd "M-x") 'counsel-M-x)
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
