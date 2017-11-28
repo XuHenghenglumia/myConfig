@@ -38,7 +38,6 @@
  '(default ((t (:inherit nil :stipple nil :background "#FFFFFF" :foreground "#333333" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 158 :width normal :foundry "PfEd" :family "Input Mono")))))
 (setq inhibit-startup-message t)
 ;;(setq skeleton-pair t)
-(setq user-mail-address "xuheng_lumia@outlook.com")
 (electric-pair-mode t)
 (electric-indent-mode t)
 ;;(require linum-mode)
