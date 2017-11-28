@@ -30,10 +30,12 @@ Plugin 'VundleVim/Vundle.vim'
 " All of your Plugins must be added before the following line
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'vim-scripts/taglist.vim'
+"Plugin 'vim-scripts/taglist.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'shougo/neocomplete.vim'
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -66,23 +68,38 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_theme='luna'
 
+"taglist
+map <F4> :TagbarToggle<CR>
+imap <F4> :TagbarToggle<CR>
+
 set nu
+let loaded_matchparen = 1
 syntax on
+
+set foldmethod=syntax
+set foldlevel=99
+map <F12> za
+"colorscheme solarized
+colorscheme inkpot "theme setting
+"colorscheme paintbox
+
 set autoindent
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
+set backspace=indent,eol,start
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 set expandtab
 set cindent
 set smartindent
 map <C-N> :tabnext<CR>
 map <C-P> :tabprevious<CR>
 imap <C-J> <ESC>
+imap jj <ESC>
 map <F2> :bn<CR>
 map <F8> :bp<CR>
 imap <C-S> <ESC>:w<CR>
 map <C-S> :w<CR>
-"let g:AutoPairsFlyMode = 1
+let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<M-b>'
 map <F5> :call CompileRunGcc()<CR>
 imap <F5> <ESC>:call CompileRunGcc()<CR>
