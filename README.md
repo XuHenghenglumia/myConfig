@@ -1,2 +1,10 @@
 # myConfig
-some configure files
+- Xresource
+- config.fish
+- conkyrc
+- i3\_config
+- i3status\_config
+- init.el
+- README.md
+- _vimrc
+- _Xresources
