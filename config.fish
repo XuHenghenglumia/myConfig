@@ -1,4 +1,5 @@
 alias tmux='tmux -2'
+alias emacs='emacs -nw'
 
 function fish_prompt --description 'Write out the prompt'
     # Just calculate these once, to save a few cycles when displaying the prompt

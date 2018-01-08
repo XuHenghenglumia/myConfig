@@ -31,11 +31,14 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'vim-scripts/taglist.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mhinz/vim-startify'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'shougo/neocomplete.vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'mattn/emmet-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -66,7 +69,7 @@ let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ' '
 set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_theme='luna'
+let g:airline_theme='bubblegum'
 
 "taglist
 map <F4> :TagbarToggle<CR>
@@ -80,7 +83,7 @@ set foldmethod=syntax
 set foldlevel=99
 map <F12> za
 "colorscheme solarized
-colorscheme inkpot "theme setting
+"colorscheme inkpot "theme setting
 "colorscheme paintbox
 
 set autoindent
