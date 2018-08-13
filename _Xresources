@@ -68,9 +68,9 @@ XTerm*termName: xterm-256color
 ! ------------------------------------------------------------------------------
 Xft.dpi:96
 *fontMenu*fontdefault*Label: Default
-*faceName:Input Mono:antialias=True:pixelsize=18
+*faceName:DejaVu Sans Mono for Powerline:antialias=True:pixelsize=18
 *faceNameDoublesize:Source Han Sans SC:antialias=True:pixelsize=16
-*inputMethod:fcitx
+*inputMethod:ibus
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
